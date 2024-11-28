@@ -1,0 +1,73 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Nueva fuente moderna */
+    background-color: #121212; /* Fondo gris oscuro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #FFD700; /* Dorado brillante para destacar */
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #1E1E2F; /* Fondo oscuro para el contraste */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    text-align: left;
+    padding: 12px;
+    border: 1px solid #333333; /* Bordes sutiles para separar filas */
+    color: #E0E0E0; /* Texto gris claro */
+}
+
+th {
+    background-color: #2B6CB0; /* Azul profundo */
+    color: #F0F8FF; /* Azul muy claro para contraste */
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #2C2C38; /* Alterna filas con un gris más claro */
+}
+
+tr:hover {
+    background-color: #3A3A4E; /* Color destacado para hover */
+}
+
+td a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #E63946; /* Rojo vibrante */
+    margin: 0 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+td a:hover {
+    background-color: #E63946; /* Fondo rojo vibrante */
+    color: white; /* Contraste blanco */
+}
+
+td a[href="/add"] {
+    background-color: #2B6CB0; /* Azul profundo */
+    color: white;
+    border: none;
+}
+
+td a[href="/add"]:hover {
+    background-color: #3C8DF0; /* Azul más claro para hover */
+}

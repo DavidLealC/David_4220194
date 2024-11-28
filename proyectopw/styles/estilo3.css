@@ -1,0 +1,82 @@
+body {
+    font-family: 'Poppins', sans-serif; /* Fuente moderna */
+    background-color: #1E1E2F; /* Fondo oscuro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #FFD700; /* Dorado brillante */
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2.5em; /* Tamaño más destacado */
+}
+
+form {
+    width: 90%;
+    max-width: 600px;
+    background-color: #282A36; /* Gris oscuro */
+    padding: 30px; /* Espaciado interno mayor */
+    border-radius: 15px; /* Bordes más suaves */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Sombra más definida */
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #F8F8F2; /* Texto claro */
+    font-size: 1rem;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    margin-top: 10px; /* Separación mayor entre etiqueta y campo */
+    padding: 12px; /* Espaciado interno */
+    border: 1px solid #44475A; /* Bordes oscuros */
+    border-radius: 8px; /* Bordes más suaves */
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #3A3A4E; /* Fondo gris intermedio */
+    color: #F8F8F2; /* Texto claro */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea {
+    resize: none;
+    height: 100px; /* Altura mayor */
+}
+
+button {
+    margin-top: 30px; /* Separación destacada */
+    width: 100%;
+    padding: 12px 15px; /* Espaciado mayor */
+    font-size: 18px;
+    font-weight: bold;
+    color: #1E1E2F; /* Texto oscuro */
+    background-color: #50FA7B; /* Verde vibrante */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #40D07A; /* Verde más oscuro */
+    transform: scale(1.05); /* Agrandamiento al pasar el cursor */
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #BD93F9; /* Morado brillante */
+    outline: none;
+    box-shadow: 0 0 8px rgba(189, 147, 249, 0.7); /* Sombra colorida */
+}
